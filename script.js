@@ -66,35 +66,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     function moveButton() {
-        const x = Math.floor(Math.random() * 80) + 10;
-        const y = Math.floor(Math.random() * 80) + 10;
-        clickButton.style.position = 'absolute';
-        clickButton.style.left = `${x}%`;
-        clickButton.style.top = `${y}%`;
-    }
-
-    function countdown() {
-        if (timeLeft > 0) {
-            timeLeft--;
-            timeDisplay.textContent = timeLeft;
-        } else {
-            clearInterval(timer);
-            endGame();
-        }
-    }
-
-    function endGame() {
-        clickButton.disabled = true;
-        if (score > highScore) {
-            highScore = score;
-            localStorage.setItem('highScore', highScore);
-            highScoreDisplay.textContent = highScore;
-        }
-        alert(`Time's up! Your final score is ${score}.`);
-    }
-
-    const timer = setInterval(countdown, 1000);
-    showLogin();
-});
-
-
+        const x = Math.floor(Math.random() * 80
