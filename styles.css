@@ -8,13 +8,17 @@ body {
     background-color: #f0f0f0;
 }
 
-.game-container {
+.container {
     text-align: center;
     background: white;
     padding: 20px;
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-container, .signup-container, .game-container {
+    display: none;
 }
 
 button {
@@ -31,3 +35,12 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
